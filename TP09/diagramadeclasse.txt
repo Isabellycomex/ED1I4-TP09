@@ -1,0 +1,17 @@
++---------------------+         +------------------------+         +-------------------------+
+|       Veiculo       |         |       Garagem          |         |   FrotaTransporte       |
++---------------------+         +---------------------+            +-------------------------+
+| - Numero: int       |         | - Nome: string         |         |- veiculos: List<Veiculo>|
+| - Capacidade: int   |         | - VeiculosEstacionados:|         |- garagens: List<Garagem>|
+| - PassageirosTransp:|         |   List<Veiculo>        |         |- jornadaIniciada: bool  |
+|    int              |         +---------------------+            +-------------------------+
+|                     |         | + EstacionarVeiculo(   |         | + IniciarJornada()      |
+| + Veiculo()         |         |     Veiculo veiculo,   |         | + EncerrarJornada()     |
+|+ Veiculo(int numero,|         |     string destino)    |         | + CadastrarVeiculo()    |
+|   int capacidade)   |         | + LiberarViagem(       |         | + CadastrarGaragem()    |
+| + Estacionar()      |         |     string origem,     |         | + LiberarViagem()       |
+| + LiberarViagem()   |         |     string destino)    |         |+ ListarVeiculosGaragem()|
+|+ InformarQuantidade-|         +------------------------+         |+ InformarQuantidadeViagens()|
+|   Passageiros()     |                                            | + ListarViagens()       |
++---------------------+                                            | + InformarQuantidadePassageiros()|
+                                                                      +-------------------------+
